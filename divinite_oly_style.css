@@ -1,0 +1,151 @@
+body {
+	background: url("https://images2.alphacoders.com/959/959835.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'GFS Neohellenic', sans-serif;
+}
+
+.nav-bar {
+	margin: 10px 400px 0 400px;
+	border: 3px solid white;
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.nav-bar2 {
+	margin: 0 500px 0px 500px;
+	border: 3px solid white;
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.navbar {
+	display: grid;
+	justify-content: center;
+
+}
+
+.list {
+	display: inline;
+	margin: 10px;
+	color: black;
+	list-style: none;
+	padding: 17px 10px 17px 10px;
+
+}
+
+.list2 {
+	display: inline;
+	margin: 20px;
+	color: black;
+	list-style: none;
+	padding: 17px 10px 17px 10px;
+	font-size: 15px;
+
+}
+
+.liens {
+	color: black;
+	text-decoration: none;
+}
+
+.list:hover {
+	background-color: white;
+	text-decoration: underline;
+}
+
+.list2:hover {
+	background-color: white;
+	text-decoration: underline;
+}
+
+ul {
+    padding-inline-start: 0px;
+}
+
+.container_title {
+	display: flex;
+	justify-content: center;
+	border: 2px solid white;
+	border-radius: 0px 0px 50px 50px;
+	margin: 0px 550px 0px 550px;
+	background-color: rgba(255, 255, 255, .3);
+
+}
+
+.try {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.container_divinite {
+	text-align: center;
+	text-decoration: underline;
+	color: white;
+}
+
+.divinite_grid {
+	width: 700px;
+	height: 300px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 10px;
+	margin: 50px;
+	border: 2px solid white;
+	border-radius: 25px;
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.divinite2_grid {
+	display: grid;
+	justify-items: end;
+	width: 100%;
+}
+
+
+.divinite_grid:hover {
+	transition-duration: 1s;
+	transform: scale(1.1);
+}
+
+.img_divinite {
+	width: 250px;
+	height: 300px;
+	border-radius: 25px;
+}
+
+.p_divinite {
+	font-size: 17px;
+}
+
+span {
+	text-decoration: underline;
+}
+
+.footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: auto;
+	height: 50px;
+	border: 3px solid white;
+	background-color: rgba(255, 255, 255, .3);
+	margin: 0 100px 0 100px;
+}
+
+.footer_note {
+	color: white;
+	margin-left: 200px;
+
+}
+
+.logoo {
+	margin-left: 350px;
+}
+
+.logo {
+	display: inline;
+}
+
+.footer_logo {
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+}

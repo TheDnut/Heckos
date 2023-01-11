@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Puissances Mortelles</title>
+	<link rel="stylesheet" type="text/css" href="puissance_style.css">
+	  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+	<nav class="nav-bar">
+		<div class="navbar">
+			<ul>
+				<li class="list"><a class="liens" href="index.html">Accueil</a></li>
+				<li class="list"><a class="liens" href="heckos_lore.html">Les débuts d'Heckos</a></li>
+				<li class="list"><a class="liens" href="heckos_divinite_prim.html">Divinités</a></li>
+				<li class="list" style="background-color: white;"><a class="liens" href="puissance.html">Puissances mortelles</a></li>
+				<li class="list"><a class="liens" href="" onclick="alert('Aucune Campagne de crée actuellement..')">Campagne</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="puissance_container">
+		<div class="puissance shov" id="sparte" onclick="sparteFunction()">
+			<img class="puissance_img_sparte" src="img/sparte.png">
+		</div>
+		<div class="puissance ahov" id="athene" onclick="atheneFunction()">
+			<img class="puissance_img_athene" src="img/athene.png">
+		</div>
+	</div>
+	<div class="container">
+		<div id="block" class="infos">
+			<p class="car_title">Choisissez une Puissance Mortelle</p>
+		</div>
+		<div id="sparte_block" class="infos_1">
+			<p class="car_title">Eraion</p>
+			<div class="li_grid">
+				<ul class="all">
+					<li class="yo">Dirigeants</li>
+					<li class="yo">Régime</li>
+					<li class="yo">Caractéristiques</li>
+					<li class="yo">Divinité</li>
+				</ul>
+				<p style="margin: 0 25px 0 25px;"><br>Eraion est connu pour ses deux rois: le roi Altes et le roi Hippokratides, ainsi que la reine Thaleia, femme d'Altes.<br><br><br><br><br><br><br><br>Eraion est connu pour son état militarisé ou tous les citoyens sont formés à défendre leur patrie et ou les conséquences, toujours sévères, des crimes sont jugé uniquement par les dirigeants.<br><br><br><br><br><br><br><br>Les ressources se font de plus en plus rare avec l'arrêt du commerce ainsi que la guerre en continue, Les Eraioniens restent tout de même un peuple très soudé et discipliné. Ils ne sont pas très chaleureux envers les étrangers mais s'entraide entre eux de facon remarquable, ceci plus le fait qu'Eraion forme les meilleurs guerriers d'Heckos, explique leur longévité impressionnante durant cette guerre.<br><br><br><br><br>Arès, Dieu de la Guerre.<br><br><br><br><br><br><br><button class="btn_sparte">Conquéris ta Destiné!</button></p>
+			</div>
+		</div>
+		<div id="athene_block" class="infos_2">
+			<p class="car_title">Acatrae</p>
+			<div class="li_grid">
+				<ul class="all">
+					<li class="yo">Dirigeants</li>
+					<li class="yo">Régime</li>
+					<li class="yo">Caractéristiques</li>
+					<li class="yo">Divinité</li>
+				</ul>
+				<p style="margin: 0 25px 0 25px;"><br>Acatrae est dirigé par Keteus et sa femme Irene<br><br><br><br><br><br><br><br><br><br>Acatrae est gérée par le Sénat. Keteus y siège en tant qu'Orateur Suprême avec un droit de Veto et le plus de pouvoir. Des réglements sont écrits et votés pour le Sénat dans le Glossaire Zethus, chaque crime est punis selon le Glossaire, peut importe les circonstances.<br><br><br><br><br><br>Les rues d'Acatrae sont remplis d'artisans de tout genre, la cité est connue pour la qualité de ses matériaux. Mais depuis la guerre, ces mêmes matériaux se font rares et l'ont peut ressentir un certain mécontant s'élargir dans la cité contre le Sénat.<br><br><br><br><br><br><br>Athéna, Déesse de la Stratégie Militaire<br><br><br><br><br><br><br><button class="btn_athene">Bâti ta Destiné!</button></p>
+			</div>
+		</div>
+	</div><br><br>
+	<footer class="footer">
+		<div>
+			<p class="footer_note"><em>Crée avec amour par Alexis Frampol.</em></p>
+		</div>
+		<div class="logoo">
+			<div class="logo">
+				<img class="footer_logo" src="img/insta_logo.png">
+			</div>
+			<div class="logo">
+				<img class="footer_logo" src="img/twitter_logo.png">
+			</div>
+		</div>
+
+	</footer>
+<script>
+
+	const blo = document.getElementById("block");
+	const sparblo = document.getElementById("sparte_block");
+	const athblo = document.getElementById("athene_block");
+	const spar = document.getElementById("sparte");
+	const ath = document.getElementById("athene");
+
+	function sparteFunction() {
+		blo.classList.add('animate__animated', 'animate__zoomOutLeft');
+		spar.classList.remove('shov');
+		spar.classList.add('try_sparte');
+		spar.style.border = "7px solid red";
+		ath.style.overflow = "hidden";
+		ath.classList.remove('try_athene');
+		ath.classList.add('ahov');
+		ath.style.transition = "1s";
+		blo.style.opacity = "0";
+		athblo.style.opacity = "0";
+		sparblo.style.opacity = "1";
+	}
+
+	function atheneFunction() {
+		blo.classList.add('animate__animated', 'animate__zoomOutLeft');
+		ath.classList.remove('ahov');
+		ath.classList.add('try_athene');
+		ath.style.border = "7px solid #48abe0";
+		spar.style.overflow = "hidden";
+		spar.classList.remove('try_sparte');
+		spar.classList.add('shov');
+		spar.style.transition = "1s";
+		blo.style.opacity = "0";
+		sparblo.style.opacity = "0";
+		athblo.style.opacity = "1";
+
+	}
+
+
+
+
+</script>
+
+</body>
+</html>
